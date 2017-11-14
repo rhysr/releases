@@ -7,10 +7,15 @@ body { padding-top: 50px; }
 }
 
 /** angular-ui */
-.nav, .pagination, .carousel, .panel-title a { 
-    cursor: pointer; 
+.nav, .pagination, .carousel, .panel-title a {
+    cursor: pointer;
 }
 
 .diff-row {
     margin-bottom: 15px;
+}
+
+.diff-link {
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
