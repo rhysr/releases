@@ -65,7 +65,7 @@ div(ng-show="release")
             ng-show='diff.repoName',
             title='Added {{ diff.created | date:"EEEE, MMMM d yyyy HH:mm:ss" }}'
           ) {{diff.repoName}}
-        div(class='col-sm-2', ng-class='{"text-muted": diff.released}')
+        div(class='col-sm-2 diff-link', ng-class='{"text-muted": diff.released}')
           a(href='http://phab.dev.ebuyer.com/{{diff.diffId}}') {{diff.diffId}}
         div(class='col-sm-2', ng-class='{"text-success": diff.released && !diff.rolledBack}')
           span(ng-show='diff.released && !diff.rolledBack')
